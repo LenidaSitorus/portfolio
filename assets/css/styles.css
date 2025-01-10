@@ -14,8 +14,8 @@
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
   /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
@@ -30,12 +30,14 @@
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
-    --smaller-font-size: .875rem;
+    --smaller-font-size: 0.875rem;
   }
 }
 
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -50,7 +52,9 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -291,16 +295,16 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 90%;
 }
 .skills__css {
-  width: 85%;
+  width: 90%;
 }
 .skills__js {
-  width: 65%;
+  width: 80%;
 }
 .skills__ux {
-  width: 85%;
+  width: 90%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -340,6 +344,21 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+.work__description-small {
+  font-size: 0.8rem; /* Smaller text size */
+  color: #007bff; /* Blue color for clickable text */
+  margin-top: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.work__description {
+  font-size: 1rem; /* Regular text size for description */
+  color: #333; /* Dark color for better readability */
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 /* ===== FOOTER =====*/
@@ -483,4 +502,22 @@ img {
   .home__img {
     width: 450px;
   }
+}
+
+.about__text {
+  font-size: 1rem; /* Ukuran font */
+  line-height: 1.8; /* Jarak antar baris */
+  text-align: justify; /* Membuat teks rata kanan-kiri */
+  margin: 1.5rem 0; /* Margin atas dan bawah */
+  color: #333; /* Warna teks */
+  letter-spacing: 0.5px; /* Spasi antar huruf */
+}
+
+.skills__text {
+  font-size: 1rem; /* Ukuran font */
+  line-height: 1.8; /* Jarak antar baris */
+  text-align: justify; /* Membuat teks rata kanan-kiri */
+  margin: 1.5rem 0; /* Margin atas dan bawah */
+  color: #333; /* Warna teks */
+  letter-spacing: 0.5px; /* Spasi antar huruf */
 }
