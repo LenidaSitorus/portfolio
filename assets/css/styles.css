@@ -521,3 +521,64 @@ img {
   color: #333; /* Warna teks */
   letter-spacing: 0.5px; /* Spasi antar huruf */
 }
+/* ===== CERTIFICATION ===== */
+/* ===== CERTIFICATION ===== */
+.certification__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.certification__card {
+  background: var(--first-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.certification__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certification__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.certification__card:hover .certification__img {
+  transform: scale(1.1);
+}
+
+.certification__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.certification__description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .certification__container {
+    gap: 1.5rem;
+  }
+}
